@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">CERES</h1>
-                        <p class="intro-text">High-Accuracy Asteroid Tracker by Date</p>
+                        <p class="intro-text">High-Accuracy Asteroid Tracker</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -66,17 +66,17 @@
         <h2> RESULTS:</h2>
         <table style="width:100%" class="table">
              <tr>
-            <th>Name</th>
-            <th>Diameter (ft)</th> 
-            <th>Velocity (mph)</th>
-            <th>Miss Distance (miles)</th>
+            <td>NAME</td>
+            <td>DIAMETER</td> 
+            <td>VELOCITY (mph)</td>
+            <td>MISS DISTANCE (miles)</td>
           </tr>
             <% @answer.each do |asteroid| %>
           <tr>
             <td><%= asteroid[:name] %></td>
-            <td><%= asteroid[:diameter] %> <br>
-            or <%= asteroid[:diameter]/45 %> <img src="img/schoolbus-icon.jpg" style="width:50px;height:50px;">'s </td> 
-            <td><%= a steroid[:velocity] %></td>
+            <td><%= asteroid[:diameter] %> ft<br>
+            or <%= asteroid[:diameter]/45 %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
+            <td><%= asteroid[:velocity] %></td>
             <td><%= asteroid[:miss_distance] %></td>
           </tr>
         <% end %>
