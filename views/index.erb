@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CERES - Asteroid Tracker</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+ 
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">CERES</h1>
+                        <p class="intro-text">High-Accuracy Asteroid Tracker</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>ABOUT CERES</h2>
+                <p>Ceres is a high-accuracy asteroid tracking application that provides the latest information on Near-Earth Objects (NEOs) for a specific date.</p>
+                <p>By NASA's definition, NEOs are "comets and asteroids nudged by the gravitational attraction of nearby planets that enter the Earth's neighborhood."</p>
+            </div>
+        </div>
+    </section>
+    <HR COLOR="white" WIDTH="60%">
+    <br>
+    <section id="services">
+    <br>
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-lg-12 text-center">-->
+        <!--            <h2 class="section-heading">SECTION HEADING</h2>-->
+        <!--            <hr class="primary">-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <center>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/asteroid-logo.jpg" style="width:175px;height:180.5px;">
+                        <br>
+                        <br>
+                        <h5>NEOs</h5>
+                        <p class="text-muted">Provides information on NEO's that are making their closest pass to Earth.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/nasa-logo.jpg" style="width:210px;height:180px;">
+                        <br>
+                        <br>
+                        <h5>NASA API</h5>
+                        <p class="text-muted">Synced with the NeoWs NASA API and data from the NASA JPL asteroid team</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/data-icon.jpg" style="width:180px;height:179px;">
+                        <br>
+                        <br>
+                        <h5>DATA</h5>
+                        <p class="text-muted">Retrieves respective names, diameters, velocities, and miss distances.</p>
+                    </div>
+                </div>
+                </center>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="container content-section text-center">
+    <!-- Gotta make this its own section -->
+        <form method="POST" action="/results">
+            <h4>ENTER A DATE BELOW:</h4>
+            <input style="color: black" type="date" name="date">
+            <input style="color: black" type="submit">
+        </form>
+    </section>
+    
+    <br>
+    <HR COLOR="white" WIDTH="60%">
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Stella Bernstein, Kiran Khambhla, & Alex Madoff 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
