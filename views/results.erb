@@ -70,10 +70,10 @@
             <% @answer.each do |asteroid| %>
           <tr>
             <td><%= asteroid[:name] %></td>
-            <td><%= asteroid[:diameter].round %> ft<br>
-            or <%= (asteroid[:diameter]/45).round %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
-            <td><%= asteroid[:velocity].round %></td>
-            <td><%= asteroid[:miss_distance].round %></td>
+            <td><%= asteroid[:diameter].class %> ft<br>
+            or <%= (asteroid[:diameter]/45).class %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
+            <td><%= asteroid[:velocity].class %></td>
+            <td><%= asteroid[:miss_distance].class %></td>
           </tr>
         <% end %>
         </table> 
