@@ -72,8 +72,8 @@
             <td><%= asteroid[:name] %></td>
             <td><%= asteroid[:diameter].round %> ft<br>
             or <%= (asteroid[:diameter]/45).round %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
-            <td><%= asteroid[:velocity].class %></td>
-            <td><%= asteroid[:miss_distance].class %></td>
+            <td><%= Integer(asteroid[:velocity]) %></td>
+            <td><%= Integer(asteroid[:miss_distance]) %></td>
           </tr>
         <% end %>
         </table> 
