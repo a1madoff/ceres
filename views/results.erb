@@ -70,10 +70,10 @@
             <% @answer.each do |asteroid| %>
           <tr>
             <td><%= asteroid[:name] %></td>
-            <td><%= asteroid[:diameter] %> ft<br>
-            or <%= asteroid[:diameter]/45 %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
-            <td><%= asteroid[:velocity] %></td>
-            <td><%= asteroid[:miss_distance] %></td>
+            <td><%= asteroid[:diameter].round %> ft<br>
+            or <%= (asteroid[:diameter]/45).round %> <img src="img/schoolbus-icon.jpg" style="width:60px;height:60px;">'s </td> 
+            <td><%= asteroid[:velocity].round %></td>
+            <td><%= asteroid[:miss_distance].round %></td>
           </tr>
         <% end %>
         </table> 
@@ -83,7 +83,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Alex Madoff 2018</p>
+            <p>Copyright &copy; Alex Madoff 2020</p>
         </div>
     </footer>
 
